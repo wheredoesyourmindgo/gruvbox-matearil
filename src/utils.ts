@@ -35,13 +35,13 @@ export default class Utils {
     // {{{
     return {
       dark: {
-        name: "Gruvbox Material Dark",
+        name: "Gruvbox Matearil Dark",
         type: "dark",
         colors: getWorkbench(configuration, "dark"),
         tokenColors: getSyntax(configuration, "dark")
       },
       light: {
-        name: "Gruvbox Material Light",
+        name: "Gruvbox Matearil Light",
         type: "light",
         colors: getWorkbench(configuration, "light"),
         tokenColors: getSyntax(configuration, "light")

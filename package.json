@@ -1,13 +1,13 @@
 {
-    "name": "gruvbox-material",
-    "displayName": "Gruvbox Material",
+    "name": "gruvbox-matearil",
+    "displayName": "Gruvbox Matearil",
     "description": "Gruvbox with Material Palette",
     "author": "Sainnhe Park (https://github.com/sainnhe)",
-    "publisher": "sainnhe",
-    "version": "5.0.4",
-    "homepage": "https://github.com/gruvbox-material/vscode",
+    "publisher": "wheredoesyourmindgo",
+    "version": "0.0.1",
+    "homepage": "https://github.com/wheredoesyourmindgo/vscode",
     "bugs": {
-        "url": "https://github.com/gruvbox-material/vscode/issues"
+        "url": "https://github.com/wheredoesyourmindgo/vscode/issues"
     },
     "icon": "icon.png",
     "license": "MIT",
@@ -27,7 +27,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/gruvbox-material/vscode.git"
+        "url": "https://github.com/wheredoesyourmindgo/vscode.git"
     },
     "activationEvents": [
         "*"
@@ -36,20 +36,20 @@
     "contributes": {
         "themes": [
             {
-                "label": "Gruvbox Material Dark",
+                "label": "Gruvbox Matearil Dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/gruvbox-material-dark.json"
+                "path": "./themes/gruvbox-matearil-dark.json"
             },
             {
-                "label": "Gruvbox Material Light",
+                "label": "Gruvbox Matearil Light",
                 "uiTheme": "vs",
-                "path": "./themes/gruvbox-material-light.json"
+                "path": "./themes/gruvbox-matearil-light.json"
             }
         ],
         "configuration": {
-            "title": "Gruvbox Material",
+            "title": "Gruvbox Matearil",
             "properties": {
-                "gruvboxMaterial.darkContrast": {
+                "gruvboxMatearil.darkContrast": {
                     "type": "string",
                     "default": "medium",
                     "description": "Background contrast for the dark variant.",
@@ -59,7 +59,7 @@
                         "hard"
                     ]
                 },
-                "gruvboxMaterial.lightContrast": {
+                "gruvboxMatearil.lightContrast": {
                     "type": "string",
                     "default": "medium",
                     "description": "Background contrast for the light variant.",
@@ -69,7 +69,7 @@
                         "hard"
                     ]
                 },
-                "gruvboxMaterial.darkWorkbench": {
+                "gruvboxMatearil.darkWorkbench": {
                     "type": "string",
                     "default": "material",
                     "description": "Workbench style for the dark variant.",
@@ -79,7 +79,7 @@
                         "high-contrast"
                     ]
                 },
-                "gruvboxMaterial.lightWorkbench": {
+                "gruvboxMatearil.lightWorkbench": {
                     "type": "string",
                     "default": "material",
                     "description": "Workbench style for the light variant.",
@@ -89,7 +89,7 @@
                         "high-contrast"
                     ]
                 },
-                "gruvboxMaterial.darkSelection": {
+                "gruvboxMatearil.darkSelection": {
                     "type": "string",
                     "default": "grey",
                     "description": "The background color of selected text in the dark variant.",
@@ -100,7 +100,7 @@
                         "red"
                     ]
                 },
-                "gruvboxMaterial.lightSelection": {
+                "gruvboxMatearil.lightSelection": {
                     "type": "string",
                     "default": "grey",
                     "description": "The background color of selected text in the light variant.",
@@ -111,7 +111,7 @@
                         "red"
                     ]
                 },
-                "gruvboxMaterial.darkPalette": {
+                "gruvboxMatearil.darkPalette": {
                     "type": "string",
                     "default": "material",
                     "description": "The color palette used in the dark variant.",
@@ -120,7 +120,7 @@
                         "original"
                     ]
                 },
-                "gruvboxMaterial.lightPalette": {
+                "gruvboxMatearil.lightPalette": {
                     "type": "string",
                     "default": "material",
                     "description": "The color palette used in the light variant.",
@@ -129,12 +129,12 @@
                         "original"
                     ]
                 },
-                "gruvboxMaterial.italicKeywords": {
+                "gruvboxMatearil.italicKeywords": {
                     "type": "boolean",
                     "default": false,
                     "description": "Italicize keywords or not."
                 },
-                "gruvboxMaterial.italicComments": {
+                "gruvboxMatearil.italicComments": {
                     "type": "boolean",
                     "default": true,
                     "description": "Italicize comments or not."

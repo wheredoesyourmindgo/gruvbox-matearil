@@ -21,7 +21,7 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
     {
       name: "Keyword Italic",
       scope:
-        "keyword.control, storage.type.function, storage.type.class, storage.type.enum, storage.type.interface, storage.type.property, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends",
+        "keyword.control, storage.type.class, storage.type.enum, storage.type.interface, storage.type.property, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends",
       settings: {
         fontStyle: "italic"
       }
@@ -398,8 +398,7 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "entity.name.tag.html, entity.name.tag.xml, entity.name.tag.localname.xml",
       settings: {
-        foreground: palette.orange,
-        fontStyle: "italic"
+        foreground: palette.orange
       }
     },
     {
@@ -621,14 +620,7 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
     // }}}
     // TypeScript{{{
     {
-      name: "TypeScript white",
-      scope: "entity.name.type.module.ts",
-      settings: {
-        foreground: palette.fg
-      }
-    },
-    {
-      name: "TypeScript grey",
+      name: "TypeScript grey1",
       scope:
         "keyword.operator.type.annotation.ts, punctuation.accessor.ts, punctuation.separator.key-value.ts",
       settings: {
@@ -636,9 +628,18 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
       }
     },
     {
-      name: "TypeScript green",
+      name: "TypeScript yellow",
       scope:
         "punctuation.definition.tag.directive.ts, entity.other.attribute-name.directive.ts",
+      settings: {
+        foreground: palette.yellow,
+        fontStyle: "italic"
+      }
+    },
+    {
+      name: "TypeScript green",
+      scope:
+        "string.quoted.double.ts, string.quoted.single.ts, punctuation.definition.string.begin.ts, punctuation.definition.string.end.ts",
       settings: {
         foreground: palette.green
       }
@@ -646,17 +647,32 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
     {
       name: "TypeScript aqua",
       scope:
-        "entity.name.type.ts, entity.name.type.interface.ts, entity.other.inherited-class.ts, entity.name.type.alias.ts, entity.name.type.class.ts, entity.name.type.enum.ts",
+        "entity.name.function.ts",
       settings: {
         foreground: palette.aqua
       }
     },
     {
-      name: "TypeScript orange",
+      name: "TypeScript white0",
       scope:
-        "storage.type.ts, storage.type.function.arrow.ts, storage.type.type.ts",
+        "variable.other.readwrite.alias.ts, variable.other.readwrite.ts",
       settings: {
-        foreground: palette.orange
+        foreground: palette.fg0
+      }
+    },
+    {
+      name: "TypeScript white",
+      scope: "entity.name.type.module.ts",
+      settings: {
+        foreground: palette.fg
+      }
+    },
+    {
+      name: "TypeScript white1",
+      scope:
+        "entity.name.type.ts, entity.name.type.interface.ts, entity.other.inherited-class.ts, entity.name.type.alias.ts, entity.name.type.class.ts, entity.name.type.enum.ts, punctuation.definition.typeparameters.begin.ts, punctuation.definition.typeparameters.end.ts, support.type.primitive.ts",
+      settings: {
+        foreground: palette.fg1
       }
     },
     {
@@ -669,14 +685,64 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
     {
       name: "TypeScript purple",
       scope:
-        "keyword.control.import.ts, keyword.control.export.ts, storage.type.namespace.ts",
+        "storage.type.namespace.ts",
       settings: {
         foreground: palette.purple,
         fontStyle: "italic"
       }
     },
+    {
+      name: "TypeScript orange",
+      scope:
+        "storage.type.ts, storage.type.function.arrow.ts, storage.type.type.ts",
+      settings: {
+        foreground: palette.orange
+      }
+    },
+    {
+      name: "TypeScript red",
+      scope:
+        "keyword.control.import.ts, keyword.control.export.ts, storage.modifier.async.ts, keyword.control.flow.ts, keyword.control.trycatch.ts",
+      settings: {
+        foreground: palette.red
+      }
+    },
     // }}}
     // TSX{{{
+    {
+      name: "TSX grey1",
+      scope: 
+        "keyword.operator.type.annotation.tsx, punctuation.accessor.tsx, punctuation.separator.key-value.tsx, punctuation.definition.tag.begin.tsx, punctuation.definition.tag.end.tsx"
+      ,
+      settings: {
+        foreground: palette.grey1
+      }
+    },
+    {
+      name: "TSX yellow",
+      scope:
+        "punctuation.definition.tag.directive.tsx, entity.other.attribute-name.directive.tsx, entity.other.attribute-name.tsx",
+      settings: {
+        // foreground: palette.green
+        foreground: palette.yellow,
+        fontStyle: "italic"
+      }
+    },
+    {
+      name: "TSX green",
+      scope:
+        "string.quoted.double.tsx, string.quoted.single.tsx, punctuation.definition.string.begin.tsx, punctuation.definition.string.end.tsx",
+      settings: {
+        foreground: palette.green
+      }
+    },
+    {
+      name: "TSX aqua",
+      scope: "entity.name.function.tsx",
+      settings: {
+        foreground: palette.aqua
+      }
+    },
     {
       name: "TSX white",
       scope: "entity.name.type.module.tsx",
@@ -685,32 +751,16 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
       }
     },
     {
-      name: "TSX grey",
+      name: "TSX white1",
       scope:
-        "keyword.operator.type.annotation.tsx, punctuation.accessor.tsx, punctuation.separator.key-value.tsx",
+        "entity.name.type.tsx, entity.name.type.interface.tsx, entity.other.inherited-class.tsx, entity.name.type.alias.tsx, entity.name.type.class.tsx, entity.name.type.enum.tsx, punctuation.definition.typeparameters.begin.tsx, punctuation.definition.typeparameters.end.tsx, support.type.primitive.tsx",
       settings: {
-        foreground: palette.grey1
-      }
-    },
-    {
-      name: "TSX green",
-      scope:
-        "punctuation.definition.tag.directive.tsx, entity.other.attribute-name.directive.tsx, punctuation.definition.tag.begin.tsx, punctuation.definition.tag.end.tsx, entity.other.attribute-name.tsx",
-      settings: {
-        foreground: palette.green
-      }
-    },
-    {
-      name: "TSX aqua",
-      scope:
-        "entity.name.type.tsx, entity.name.type.interface.tsx, entity.other.inherited-class.tsx, entity.name.type.alias.tsx, entity.name.type.class.tsx, entity.name.type.enum.tsx",
-      settings: {
-        foreground: palette.aqua
+        foreground: palette.fg1
       }
     },
     {
       name: "TSX blue",
-      scope: "entity.name.type.module.tsx",
+      scope: "entity.name.type.module.tsx, 	support.class.component.tsx",
       settings: {
         foreground: palette.blue
       }
@@ -718,7 +768,7 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
     {
       name: "TSX purple",
       scope:
-        "keyword.control.import.tsx, keyword.control.export.tsx, storage.type.namespace.tsx",
+        "storage.type.namespace.tsx",
       settings: {
         foreground: palette.purple,
         fontStyle: "italic"
@@ -727,9 +777,25 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
     {
       name: "TSX orange",
       scope:
-        "storage.type.tsx, storage.type.function.arrow.tsx, storage.type.type.tsx, support.class.component.tsx",
+        "storage.type.tsx, storage.type.function.arrow.tsx, storage.type.type.tsx",
       settings: {
         foreground: palette.orange
+      }
+    },
+    {
+      name: "TSX red",
+      scope:
+        "keyword.control.import.tsx, keyword.control.export.tsx, storage.modifier.async.tsx, keyword.control.flow.tsx, keyword.control.trycatch.tsx",
+      settings: {
+        foreground: palette.red
+      }
+    },
+    {
+      name: "TSX white0",
+      scope:
+        "variable.other.readwrite.alias.tsx, variable.other.readwrite.tsx",
+      settings: {
+        foreground: palette.red
       }
     },
     // }}}
