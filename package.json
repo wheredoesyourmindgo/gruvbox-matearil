@@ -1,160 +1,160 @@
 {
-    "name": "gruvbox-matearil",
-    "displayName": "Gruvbox Matearil",
-    "description": "Gruvbox with Material Palette",
-    "author": "Sainnhe Park (https://github.com/sainnhe)",
-    "publisher": "wheredoesyourmindgo",
-    "version": "5.0.12",
-    "homepage": "https://github.com/wheredoesyourmindgo/vscode",
-    "bugs": {
-        "url": "https://github.com/wheredoesyourmindgo/vscode/issues"
-    },
-    "icon": "",
-    "license": "MIT",
-    "keywords": [
-        "gruvbox",
-        "theme"
+  "name": "gruvbox-matearil",
+  "displayName": "Gruvbox Matearil",
+  "description": "Gruvbox with Material Palette",
+  "author": "Sainnhe Park (https://github.com/sainnhe)",
+  "publisher": "wheredoesyourmindgo",
+  "version": "5.0.12",
+  "homepage": "https://github.com/wheredoesyourmindgo/vscode",
+  "bugs": {
+    "url": "https://github.com/wheredoesyourmindgo/vscode/issues"
+  },
+  "icon": "icon.png",
+  "license": "MIT",
+  "keywords": [
+    "gruvbox",
+    "theme"
+  ],
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "galleryBanner": {
+    "color": "#32302f",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wheredoesyourmindgo/vscode.git"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Gruvbox Matearil Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gruvbox-matearil-dark.json"
+      },
+      {
+        "label": "Gruvbox Matearil Light",
+        "uiTheme": "vs",
+        "path": "./themes/gruvbox-matearil-light.json"
+      }
     ],
-    "engines": {
-        "vscode": "^1.40.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "galleryBanner": {
-        "color": "#32302f",
-        "theme": "dark"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/wheredoesyourmindgo/vscode.git"
-    },
-    "activationEvents": [
-        "*"
-    ],
-    "main": "./out/extension.js",
-    "contributes": {
-        "themes": [
-            {
-                "label": "Gruvbox Matearil Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/gruvbox-matearil-dark.json"
-            },
-            {
-                "label": "Gruvbox Matearil Light",
-                "uiTheme": "vs",
-                "path": "./themes/gruvbox-matearil-light.json"
-            }
-        ],
-        "configuration": {
-            "title": "Gruvbox Matearil",
-            "properties": {
-                "gruvboxMatearil.darkContrast": {
-                    "type": "string",
-                    "default": "medium",
-                    "description": "Background contrast for the dark variant.",
-                    "enum": [
-                        "soft",
-                        "medium",
-                        "hard"
-                    ]
-                },
-                "gruvboxMatearil.lightContrast": {
-                    "type": "string",
-                    "default": "medium",
-                    "description": "Background contrast for the light variant.",
-                    "enum": [
-                        "soft",
-                        "medium",
-                        "hard"
-                    ]
-                },
-                "gruvboxMatearil.darkWorkbench": {
-                    "type": "string",
-                    "default": "material",
-                    "description": "Workbench style for the dark variant.",
-                    "enum": [
-                        "material",
-                        "flat",
-                        "high-contrast"
-                    ]
-                },
-                "gruvboxMatearil.lightWorkbench": {
-                    "type": "string",
-                    "default": "material",
-                    "description": "Workbench style for the light variant.",
-                    "enum": [
-                        "material",
-                        "flat",
-                        "high-contrast"
-                    ]
-                },
-                "gruvboxMatearil.darkSelection": {
-                    "type": "string",
-                    "default": "grey",
-                    "description": "The background color of selected text in the dark variant.",
-                    "enum": [
-                        "grey",
-                        "green",
-                        "blue",
-                        "red"
-                    ]
-                },
-                "gruvboxMatearil.lightSelection": {
-                    "type": "string",
-                    "default": "grey",
-                    "description": "The background color of selected text in the light variant.",
-                    "enum": [
-                        "grey",
-                        "green",
-                        "blue",
-                        "red"
-                    ]
-                },
-                "gruvboxMatearil.darkPalette": {
-                    "type": "string",
-                    "default": "material",
-                    "description": "The color palette used in the dark variant.",
-                    "enum": [
-                        "material",
-                        "original"
-                    ]
-                },
-                "gruvboxMatearil.lightPalette": {
-                    "type": "string",
-                    "default": "material",
-                    "description": "The color palette used in the light variant.",
-                    "enum": [
-                        "material",
-                        "original"
-                    ]
-                },
-                "gruvboxMatearil.italicKeywords": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Italicize keywords or not."
-                },
-                "gruvboxMatearil.italicComments": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "Italicize comments or not."
-                }
-            }
+    "configuration": {
+      "title": "Gruvbox Matearil",
+      "properties": {
+        "gruvboxMatearil.darkContrast": {
+          "type": "string",
+          "default": "medium",
+          "description": "Background contrast for the dark variant.",
+          "enum": [
+            "soft",
+            "medium",
+            "hard"
+          ]
+        },
+        "gruvboxMatearil.lightContrast": {
+          "type": "string",
+          "default": "medium",
+          "description": "Background contrast for the light variant.",
+          "enum": [
+            "soft",
+            "medium",
+            "hard"
+          ]
+        },
+        "gruvboxMatearil.darkWorkbench": {
+          "type": "string",
+          "default": "material",
+          "description": "Workbench style for the dark variant.",
+          "enum": [
+            "material",
+            "flat",
+            "high-contrast"
+          ]
+        },
+        "gruvboxMatearil.lightWorkbench": {
+          "type": "string",
+          "default": "material",
+          "description": "Workbench style for the light variant.",
+          "enum": [
+            "material",
+            "flat",
+            "high-contrast"
+          ]
+        },
+        "gruvboxMatearil.darkSelection": {
+          "type": "string",
+          "default": "grey",
+          "description": "The background color of selected text in the dark variant.",
+          "enum": [
+            "grey",
+            "green",
+            "blue",
+            "red"
+          ]
+        },
+        "gruvboxMatearil.lightSelection": {
+          "type": "string",
+          "default": "grey",
+          "description": "The background color of selected text in the light variant.",
+          "enum": [
+            "grey",
+            "green",
+            "blue",
+            "red"
+          ]
+        },
+        "gruvboxMatearil.darkPalette": {
+          "type": "string",
+          "default": "material",
+          "description": "The color palette used in the dark variant.",
+          "enum": [
+            "material",
+            "original"
+          ]
+        },
+        "gruvboxMatearil.lightPalette": {
+          "type": "string",
+          "default": "material",
+          "description": "The color palette used in the light variant.",
+          "enum": [
+            "material",
+            "original"
+          ]
+        },
+        "gruvboxMatearil.italicKeywords": {
+          "type": "boolean",
+          "default": false,
+          "description": "Italicize keywords or not."
+        },
+        "gruvboxMatearil.italicComments": {
+          "type": "boolean",
+          "default": true,
+          "description": "Italicize comments or not."
         }
-    },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile:ts": "tsc -p src",
-        "compile": "yarn compile:ts",
-        "watch:ts": "yarn compile:ts -w",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "@types/mocha": "^2.2.42",
-        "@types/node": "^10.12.21",
-        "@types/vscode": "^1.40.0",
-        "nodemon": "^1.19.4",
-        "tslint": "^5.12.1",
-        "typescript": "^3.3.1"
+      }
     }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile:ts": "tsc -p src",
+    "compile": "yarn compile:ts",
+    "watch:ts": "yarn compile:ts -w",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^10.12.21",
+    "@types/vscode": "^1.40.0",
+    "nodemon": "^1.19.4",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1"
+  }
 }
