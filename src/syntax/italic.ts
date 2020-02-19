@@ -723,7 +723,6 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "punctuation.definition.tag.directive.tsx, entity.other.attribute-name.directive.tsx, entity.other.attribute-name.tsx",
       settings: {
-        // foreground: palette.green
         foreground: palette.yellow,
         fontStyle: "italic"
       }
@@ -741,6 +740,14 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
       scope: "entity.name.function.tsx",
       settings: {
         foreground: palette.aqua
+      }
+    },
+    {
+      name: "TSX white0",
+      scope:
+        "variable.other.readwrite.alias.tsx, variable.other.readwrite.tsx",
+      settings: {
+        foreground: palette.fg0
       }
     },
     {
@@ -786,14 +793,6 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
       name: "TSX red",
       scope:
         "keyword.control.import.tsx, keyword.control.export.tsx, storage.modifier.async.tsx, keyword.control.flow.tsx, keyword.control.trycatch.tsx",
-      settings: {
-        foreground: palette.red
-      }
-    },
-    {
-      name: "TSX white0",
-      scope:
-        "variable.other.readwrite.alias.tsx, variable.other.readwrite.tsx",
       settings: {
         foreground: palette.red
       }

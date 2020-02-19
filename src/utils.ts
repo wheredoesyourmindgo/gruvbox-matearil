@@ -11,13 +11,13 @@ export default class Utils {
     event: ConfigurationChangeEvent,
     onConfigChange: () => void
   ): void {
-    if (event.affectsConfiguration("gruvboxMaterial")) {
+    if (event.affectsConfiguration("gruvboxMatearil")) {
       onConfigChange();
     }
   } // }}}
   getConfiguration(): Configuration {
     // {{{
-    let workspaceConfiguration = workspace.getConfiguration("gruvboxMaterial");
+    let workspaceConfiguration = workspace.getConfiguration("gruvboxMatearil");
     return {
       darkContrast: workspaceConfiguration.get<string>("darkContrast"),
       lightContrast: workspaceConfiguration.get<string>("lightContrast"),
