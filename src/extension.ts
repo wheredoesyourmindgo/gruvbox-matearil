@@ -5,6 +5,13 @@ import Utils from "./utils";
 export function activate() {
   let utils = new Utils();
 
+
+  utils.generate(
+    join(__dirname, "..", "themes", "gruvbox-matearil-dark.json"),
+    join(__dirname, "..", "themes", "gruvbox-matearil-light.json"),
+    utils.getThemeData(utils.getConfiguration())
+  );
+
   // regenerate theme files when user configuration changes
   workspace.onDidChangeConfiguration(event => {
     utils.detectConfigChanges(event, () => {

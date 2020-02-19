@@ -182,7 +182,7 @@
     "terminal.ansiBrightCyan": "#4c7a5d",
     "terminal.ansiBrightGreen": "#6c782e",
     "terminal.ansiBrightMagenta": "#945e80",
-    "terminal.ansiBrightRed": "#ffffff",
+    "terminal.ansiBrightRed": "#c14a4a",
     "terminal.ansiBrightWhite": "#654735",
     "terminal.ansiBrightYellow": "#b47109",
     "terminal.ansiCyan": "#4c7a5d",
@@ -318,14 +318,14 @@
     },
     {
       "name": "Keyword",
-      "scope": "keyword, storage.type.function, storage.type.class, storage.type.enum, storage.type.interface, storage.type.property, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends",
+      "scope": "keyword, storage.type.function, storage.type.enum, storage.type.interface, storage.type.property, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends,  storage.modifier, keyword.operator.assignment, keyword.operator.logical, keyword.operator.type, keyword.operator.optional, keyword.operator.spread, keyword.operator.rest",
       "settings": {
-        "foreground": "#c14a4a"
+        "foreground": "#945e80"
       }
     },
     {
       "name": "Keyword Italic",
-      "scope": "keyword.control, storage.type.class, storage.type.enum, storage.type.interface, storage.type.property, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends",
+      "scope": "storage.type.enum, storage.type.interface, storage.type.property, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends, keyword.control.from, storage.modifier, keyword.control.as",
       "settings": {
         "fontStyle": "italic"
       }
@@ -334,12 +334,12 @@
       "name": "Debug",
       "scope": "keyword.other.debugger",
       "settings": {
-        "foreground": "#c14a4a"
+        "foreground": "#945e80"
       }
     },
     {
       "name": "Storage",
-      "scope": "storage, modifier, keyword.var, entity.name.tag, keyword.control.case, keyword.control.switch",
+      "scope": "storage, modifier, keyword.var, entity.name.tag, keyword.control.case, keyword.control.switch, storage.type.class",
       "settings": {
         "foreground": "#c35e0a"
       }
@@ -355,7 +355,7 @@
       "name": "String",
       "scope": "string, punctuation.definition.string.end, punctuation.definition.string.begin, punctuation.definition.string.template.begin, punctuation.definition.string.template.end",
       "settings": {
-        "foreground": "#b47109"
+        "foreground": "#6c782e"
       }
     },
     {
@@ -369,7 +369,7 @@
       "name": "String Escape",
       "scope": "constant.character.escape, punctuation.quasi.element, punctuation.definition.template-expression, punctuation.section.embedded, storage.type.format, constant.other.placeholder, constant.other.placeholder, variable.interpolation",
       "settings": {
-        "foreground": "#6c782e"
+        "foreground": "#45707a"
       }
     },
     {
@@ -409,7 +409,7 @@
     },
     {
       "name": "Modules",
-      "scope": "support.module, support.node, support.other.module, support.type.object.module, entity.name.type.module, entity.name.type.class.module, keyword.control.module",
+      "scope": "support.module, support.node, support.other.module, support.type.object.module, entity.name.type.class.module, keyword.control.module",
       "settings": {
         "foreground": "#4c7a5d",
         "fontStyle": "italic"
@@ -424,37 +424,45 @@
     },
     {
       "name": "Class",
-      "scope": "entity.name.type.class, support.class, entity.name.class, entity.other.inherited-class, storage.class",
+      "scope": "entity.name.type.class, support.class, entity.name.class, storage.class",
       "settings": {
         "foreground": "#45707a"
+      }
+    },
+    {
+      "name": "Class Italic",
+      "scope": "entity.other.inherited-class",
+      "settings": {
+        "foreground": "#45707a",
+        "fontStyle": "italic"
       }
     },
     {
       "name": "Number",
       "scope": "constant.numeric",
       "settings": {
-        "foreground": "#945e80"
+        "foreground": "#c14a4a"
       }
     },
     {
       "name": "Boolean",
       "scope": "constant.language.boolean",
       "settings": {
-        "foreground": "#945e80"
+        "foreground": "#c14a4a"
       }
     },
     {
       "name": "Macro",
       "scope": "entity.name.function.preprocessor",
       "settings": {
-        "foreground": "#945e80"
+        "foreground": "#c14a4a"
       }
     },
     {
       "name": "Special identifier",
       "scope": "variable.language.this, variable.language.self, variable.language.super, keyword.other.this, variable.language.special, constant.language.null, constant.language.undefined, constant.language.nan",
       "settings": {
-        "foreground": "#945e80",
+        "foreground": "#c14a4a",
         "fontStyle": "italic"
       }
     },
@@ -462,7 +470,7 @@
       "name": "Constant",
       "scope": "constant.language, support.constant",
       "settings": {
-        "foreground": "#945e80"
+        "foreground": "#c14a4a"
       }
     },
     {
@@ -474,9 +482,17 @@
     },
     {
       "name": "Property",
-      "scope": "variable.object.property, support.variable.property, variable.other.property, variable.other.object.property, variable.other.enummember, variable.other.member, meta.object-literal.key",
+      "scope": "variable.object.property, support.variable.property, meta.object-literal.key",
       "settings": {
         "foreground": "#654735"
+      }
+    },
+    {
+      "name": "Property Italic",
+      "scope": "variable.other.property, variable.other.object.property, variable.other.enummember, variable.other.member",
+      "settings": {
+        "foreground": "#654735",
+        "fontStyle": "italic"
       }
     },
     {
@@ -653,7 +669,7 @@
     },
     {
       "name": "LaTex yellow",
-      "scope": "support.class.latex, variable.parameter.latex, variable.parameter.function.latex, variable.parameter.definition.label.latex, constant.other.reference.label.latex",
+      "scope": "variable.parameter.latex, variable.parameter.function.latex, variable.parameter.definition.label.latex, constant.other.reference.label.latex",
       "settings": {
         "foreground": "#b47109"
       }
@@ -666,8 +682,22 @@
       }
     },
     {
+      "name": "LaTex white",
+      "scope": "meta.function.environment.general.latex",
+      "settings": {
+        "foreground": "#654735"
+      }
+    },
+    {
+      "name": "LaTex blue",
+      "scope": "support.class.latex",
+      "settings": {
+        "foreground": "#45707a"
+      }
+    },
+    {
       "name": "Html grey",
-      "scope": "punctuation.separator.namespace.xml",
+      "scope": "punctuation.separator.namespace.xml, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.definition.tag.xml, meta.tag.xml, meta.tag.preprocessor.xml, meta.tag.other.html, meta.tag.block.any.html, meta.tag.inline.any.html",
       "settings": {
         "foreground": "#928374"
       }
@@ -688,7 +718,7 @@
     },
     {
       "name": "Html green",
-      "scope": "string.quoted.double.html, string.quoted.single.html, punctuation.definition.string.begin.html, punctuation.definition.string.end.html, punctuation.separator.key-value.html, punctuation.definition.string.begin.xml, punctuation.definition.string.end.xml, string.quoted.double.xml, string.quoted.single.xml, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.definition.tag.xml, meta.tag.xml, meta.tag.preprocessor.xml, meta.tag.other.html, meta.tag.block.any.html, meta.tag.inline.any.html",
+      "scope": "string.quoted.double.html, string.quoted.single.html, punctuation.definition.string.begin.html, punctuation.definition.string.end.html, punctuation.separator.key-value.html, punctuation.definition.string.begin.xml, punctuation.definition.string.end.xml, string.quoted.double.xml, string.quoted.single.xml",
       "settings": {
         "foreground": "#6c782e"
       }
@@ -837,16 +867,16 @@
     },
     {
       "name": "JavaScript grey",
-      "scope": "punctuation.accessor.js, punctuation.separator.key-value.js, punctuation.separator.label.js",
+      "scope": "punctuation.separator.label.js",
       "settings": {
         "foreground": "#928374"
       }
     },
     {
-      "name": "JavaScript red",
-      "scope": "punctuation.definition.block.tag.jsdoc",
+      "name": "JavaScript purple",
+      "scope": "punctuation.accessor.js, punctuation.separator.key-value.js, punctuation.definition.block.tag.jsdoc",
       "settings": {
-        "foreground": "#c14a4a"
+        "foreground": "#945e80"
       }
     },
     {
@@ -865,14 +895,43 @@
     },
     {
       "name": "JSX green",
-      "scope": "punctuation.definition.tag.jsx, entity.other.attribute-name.jsx, punctuation.definition.tag.begin.js.jsx, punctuation.definition.tag.end.js.jsx, entity.other.attribute-name.js.jsx",
+      "scope": "entity.other.attribute-name.jsx, entity.other.attribute-name.js.jsx",
       "settings": {
-        "foreground": "#6c782e"
+        "foreground": "#b47109"
+      }
+    },
+    {
+      "name": "JSX grey1",
+      "scope": "punctuation.definition.tag.jsx, punctuation.definition.tag.begin.js.jsx, punctuation.definition.tag.end.js.jsx",
+      "settings": {
+        "foreground": "#928374"
+      }
+    },
+    {
+      "name": "TSX yellow",
+      "scope": "punctuation.definition.tag.directive.js.jsx, entity.other.attribute-name.directive.js.jsx, entity.other.attribute-name.js.jsx",
+      "settings": {
+        "foreground": "#b47109",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "JSX purple",
+      "scope": "keyword.control.import.js.jsx, keyword.control.export.js.jsx, storage.modifier.async.js.jsx, keyword.control.flow.js.jsx, keyword.control.trycatch.js.jsx",
+      "settings": {
+        "foreground": "#945e80"
+      }
+    },
+    {
+      "name": "JSX aqua",
+      "scope": "entity.name.function.js.jsx",
+      "settings": {
+        "foreground": "#4c7a5d"
       }
     },
     {
       "name": "TypeScript grey1",
-      "scope": "keyword.operator.type.annotation.ts, punctuation.accessor.ts, punctuation.separator.key-value.ts",
+      "scope": "keyword.operator.type.annotation.ts",
       "settings": {
         "foreground": "#928374"
       }
@@ -901,37 +960,43 @@
     },
     {
       "name": "TypeScript white0",
-      "scope": "variable.other.readwrite.alias.ts, variable.other.readwrite.ts",
+      "scope": "variable.other.readwrite.alias.ts, variable.other.readwrite.ts, variable.parameter.ts, variable.other.object.ts",
       "settings": {
         "foreground": "#4f3829"
       }
     },
     {
-      "name": "TypeScript white",
-      "scope": "entity.name.type.module.ts",
-      "settings": {
-        "foreground": "#654735"
-      }
-    },
-    {
       "name": "TypeScript white1",
-      "scope": "entity.name.type.ts, entity.name.type.interface.ts, entity.other.inherited-class.ts, entity.name.type.alias.ts, entity.name.type.class.ts, entity.name.type.enum.ts, punctuation.definition.typeparameters.begin.ts, punctuation.definition.typeparameters.end.ts, support.type.primitive.ts",
+      "scope": [
+        "punctuation.definition.typeparameters.begin.ts",
+        "punctuation.definition.typeparameters.end.ts",
+        "meta.type.parameters.ts entity.name.type.ts",
+        "meta.type.annotation.ts entity.name.type.ts"
+      ],
       "settings": {
         "foreground": "#6f4f3c"
       }
     },
     {
+      "name": "TypeScript white1 Italic",
+      "scope": "support.type.primitive.ts",
+      "settings": {
+        "foreground": "#6f4f3c",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "TypeScript blue",
-      "scope": "entity.name.type.module.ts",
+      "scope": "entity.name.type.ts, entity.name.type.interface.ts, entity.other.inherited-class.ts, entity.name.type.class.ts, entity.name.type.enum.ts, entity.name.type.module.ts, entity.name.type.alias.ts",
       "settings": {
         "foreground": "#45707a"
       }
     },
     {
-      "name": "TypeScript purple",
+      "name": "TypeScript red",
       "scope": "storage.type.namespace.ts",
       "settings": {
-        "foreground": "#945e80",
+        "foreground": "#c14a4a",
         "fontStyle": "italic"
       }
     },
@@ -943,15 +1008,15 @@
       }
     },
     {
-      "name": "TypeScript red",
-      "scope": "keyword.control.import.ts, keyword.control.export.ts, storage.modifier.async.ts, keyword.control.flow.ts, keyword.control.trycatch.ts",
+      "name": "TypeScript purple",
+      "scope": "punctuation.separator.key-value.ts, punctuation.accessor.ts, keyword.control.import.ts, keyword.control.export.ts, storage.modifier.async.ts, keyword.control.flow.ts, keyword.control.trycatch.ts",
       "settings": {
-        "foreground": "#c14a4a"
+        "foreground": "#945e80"
       }
     },
     {
       "name": "TSX grey1",
-      "scope": "keyword.operator.type.annotation.tsx, punctuation.accessor.tsx, punctuation.separator.key-value.tsx, punctuation.definition.tag.begin.tsx, punctuation.definition.tag.end.tsx",
+      "scope": "keyword.operator.type.annotation.tsx, punctuation.definition.tag.begin.tsx, punctuation.definition.tag.end.tsx",
       "settings": {
         "foreground": "#928374"
       }
@@ -980,37 +1045,43 @@
     },
     {
       "name": "TSX white0",
-      "scope": "variable.other.readwrite.alias.tsx, variable.other.readwrite.tsx",
+      "scope": "variable.other.readwrite.alias.tsx, variable.other.readwrite.tsx, variable.parameter.tsx, variable.other.object.tsx",
       "settings": {
         "foreground": "#4f3829"
       }
     },
     {
-      "name": "TSX white",
-      "scope": "entity.name.type.module.tsx",
-      "settings": {
-        "foreground": "#654735"
-      }
-    },
-    {
       "name": "TSX white1",
-      "scope": "entity.name.type.tsx, entity.name.type.interface.tsx, entity.other.inherited-class.tsx, entity.name.type.alias.tsx, entity.name.type.class.tsx, entity.name.type.enum.tsx, punctuation.definition.typeparameters.begin.tsx, punctuation.definition.typeparameters.end.tsx, support.type.primitive.tsx",
+      "scope": [
+        "punctuation.definition.typeparameters.begin.tsx",
+        "punctuation.definition.typeparameters.end.tsx",
+        "meta.type.parameters.tsx entity.name.type.tsx",
+        "meta.type.annotation.tsx entity.name.type.tsx"
+      ],
       "settings": {
         "foreground": "#6f4f3c"
       }
     },
     {
+      "name": "TSX white1 Italic",
+      "scope": "support.type.primitive.tsx",
+      "settings": {
+        "foreground": "#6f4f3c",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "TSX blue",
-      "scope": "entity.name.type.module.tsx, \tsupport.class.component.tsx",
+      "scope": "entity.name.type.tsx, support.class.component.tsx, entity.name.type.interface.tsx, entity.other.inherited-class.tsx, entity.name.type.class.tsx, entity.name.type.enum.tsx, entity.name.type.module.tsx, entity.name.type.alias.tsx",
       "settings": {
         "foreground": "#45707a"
       }
     },
     {
-      "name": "TSX purple",
+      "name": "TSX red",
       "scope": "storage.type.namespace.tsx",
       "settings": {
-        "foreground": "#945e80",
+        "foreground": "#c14a4a",
         "fontStyle": "italic"
       }
     },
@@ -1022,10 +1093,10 @@
       }
     },
     {
-      "name": "TSX red",
-      "scope": "keyword.control.import.tsx, keyword.control.export.tsx, storage.modifier.async.tsx, keyword.control.flow.tsx, keyword.control.trycatch.tsx",
+      "name": "TSX purple",
+      "scope": "punctuation.separator.key-value.tsx, punctuation.accessor.tsx, keyword.control.import.tsx, keyword.control.export.tsx, storage.modifier.async.tsx, keyword.control.flow.tsx, keyword.control.trycatch.tsx",
       "settings": {
-        "foreground": "#c14a4a"
+        "foreground": "#945e80"
       }
     },
     {
