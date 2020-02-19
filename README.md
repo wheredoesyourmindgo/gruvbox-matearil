@@ -1,14 +1,12 @@
 # Gruvbox Matearil
 
-> Are you are looking for [Gruvbox Material](https://github.com/gruvbox-material/vscode)? You probably are unless you are not. 🙃
+> Are you are looking for [Gruvbox Material](https://github.com/gruvbox-material/vscode)? You probably are unless you are not.
 
-
-This VSCode color scheme is a fork of the [Gruvbox Material](https://github.com/gruvbox-material/vscode) theme. 
-
+This VSCode color scheme is a fork of the super-readable [Gruvbox Material](https://github.com/gruvbox-material/vscode) theme 👍.
 
 ## ¿Por qué?
 
-Cause I'm using different syntax colors (from the same palette provided by Gruvbox-Material) and font styles, namely for the following language modes:
+Cause I'm using different syntax colors (using the *same* palette provided by Gruvbox-Material) and font styles, namely for the following language modes:
 
 - Typescript
 - TSX
@@ -19,8 +17,6 @@ Cause I'm using different syntax colors (from the same palette provided by Gruvb
 
 Major difference that will propagate through all language modes includes the use of green strings over yellow strings, and the general swapping of how the purple and red colors are used when compared to Gruvbox-Material.
 
-## Installation, Usage, Otherwise
+## Installation, Usage, and Otherwise
 
-See [README.md](https://github.com/gruvbox-material/vscode/blob/master/README.md) on [Gruvbox Material](https://github.com/gruvbox-material/vscode) 
-
-
+See [README.md](https://github.com/gruvbox-material/vscode/blob/master/README.md) on [Gruvbox Material](https://github.com/gruvbox-material/vscode)
