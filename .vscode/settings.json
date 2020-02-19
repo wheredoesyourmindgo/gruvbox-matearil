@@ -3,5 +3,6 @@
   "cSpell.words": [
     "gruvbox",
     "matearil"
-  ]
+  ],
+  "editor.formatOnSave": true
 }
