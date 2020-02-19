@@ -9,7 +9,7 @@
     "bugs": {
         "url": "https://github.com/wheredoesyourmindgo/vscode/issues"
     },
-    "icon": "icon.png",
+    "icon": "",
     "license": "MIT",
     "keywords": [
         "gruvbox",
