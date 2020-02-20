@@ -127,7 +127,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "Class",
     scope:
-      "entity.name.type.class, support.class, entity.name.class, storage.class",
+      "entity.name.type.class, support.class, entity.name.class, storage.class, support.constant",
     settings: {
       foreground: palette.blue
     }
@@ -180,7 +180,7 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "Constant",
-    scope: "constant.language, support.constant",
+    scope: "constant.language",
     settings: {
       foreground: palette.red
     }
