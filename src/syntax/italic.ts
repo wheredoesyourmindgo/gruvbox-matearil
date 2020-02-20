@@ -57,7 +57,7 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "Attribute",
-    scope: "entity.other.attribute-name",
+    scope: "entity.other.attribute-name, support.function",
     settings: {
       foreground: palette.yellow
     }
@@ -73,7 +73,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "Function",
     scope:
-      "entity.name.function, support.function, meta.function, meta.function-call, entity.name.function, meta.definition.method",
+      "entity.name.function, meta.function, meta.function-call, entity.name.function, meta.definition.method",
     settings: {
       foreground: palette.aqua
     }
