@@ -418,7 +418,8 @@ const getSyntax = (palette: Palette) => [
   // Html/Xml{{{
   {
     name: "Html grey",
-    scope: "punctuation.separator.namespace.xml, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.definition.tag.xml, meta.tag.xml, meta.tag.preprocessor.xml, meta.tag.other.html, meta.tag.block.any.html, meta.tag.inline.any.html",
+    scope:
+      "punctuation.separator.namespace.xml, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.definition.tag.xml, meta.tag.xml, meta.tag.preprocessor.xml, meta.tag.other.html, meta.tag.block.any.html, meta.tag.inline.any.html",
     settings: {
       foreground: palette.grey1
     }
@@ -610,15 +611,15 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "JavaScript grey",
-    scope:
-      "punctuation.separator.label.js",
+    scope: "punctuation.separator.label.js",
     settings: {
       foreground: palette.grey1
     }
   },
   {
     name: "JavaScript purple",
-    scope: "punctuation.accessor.js, punctuation.separator.key-value.js, punctuation.definition.block.tag.jsdoc",
+    scope:
+      "punctuation.accessor.js, punctuation.separator.key-value.js, punctuation.definition.block.tag.jsdoc",
     settings: {
       foreground: palette.purple
     }
@@ -683,8 +684,7 @@ const getSyntax = (palette: Palette) => [
   // TypeScript{{{
   {
     name: "TypeScript grey1",
-    scope:
-      "keyword.operator.type.annotation.ts",
+    scope: "keyword.operator.type.annotation.ts",
     settings: {
       foreground: palette.grey1
     }
@@ -715,7 +715,8 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "TypeScript white0",
-    scope: "variable.other.readwrite.alias.ts, variable.other.readwrite.ts, variable.parameter.ts, variable.other.object.ts",
+    scope:
+      "variable.other.readwrite.alias.ts, variable.other.readwrite.ts, variable.parameter.ts, variable.other.object.ts",
     settings: {
       foreground: palette.fg0
     }
@@ -815,7 +816,8 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "TSX white0",
-    scope: "variable.other.readwrite.alias.tsx, variable.other.readwrite.tsx, variable.parameter.tsx, variable.other.object.tsx",
+    scope:
+      "variable.other.readwrite.alias.tsx, variable.other.readwrite.tsx, variable.parameter.tsx, variable.other.object.tsx",
     settings: {
       foreground: palette.fg0
     }
@@ -1541,8 +1543,7 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "Python purple",
-    scope:
-      "keyword.control.import.python, keyword.control.import.from.python",
+    scope: "keyword.control.import.python, keyword.control.import.from.python",
     settings: {
       foreground: palette.purple,
       fontStyle: "italic"
@@ -2077,10 +2078,10 @@ const getSyntax = (palette: Palette) => [
     }
   },
   {
-    name: "JSON orange",
+    name: "JSON white1",
     scope: "support.type.property-name.json",
     settings: {
-      foreground: palette.orange
+      foreground: palette.fg1
     }
   },
   {
@@ -2148,10 +2149,10 @@ const getSyntax = (palette: Palette) => [
     }
   }
   // }}}
-]
+];
 
 const getItalicSyntax = (palette: Palette, italicComments: boolean) => {
-  const syntax = getSyntax(palette)
+  const syntax = getSyntax(palette);
   if (italicComments) {
     syntax.push({
       name: "Comment",
@@ -2171,7 +2172,6 @@ const getItalicSyntax = (palette: Palette, italicComments: boolean) => {
     });
   }
   return syntax;
-}
+};
 
-
-export {getSyntax, getItalicSyntax}
+export { getSyntax, getItalicSyntax };
