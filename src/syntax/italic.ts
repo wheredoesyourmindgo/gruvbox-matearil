@@ -531,7 +531,8 @@ const getSyntax = (palette: Palette) => [
     scope:
       "string.quoted.single.css, string.quoted.double.css, support.constant.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, support.constant.font-name.css, variable.parameter.keyframe-list.css, support.constant.parity.css",
     settings: {
-      foreground: palette.green
+      foreground: palette.green,
+      fontStyle: "" // Attempt to un-italicize scopes.
     }
   },
   {
