@@ -527,10 +527,10 @@ const getSyntax = (palette: Palette) => [
     }
   },
   {
-    name: "CSS white0 Italic",
+    name: "CSS white1 Italic",
     scope: "support.type.vendored.property-name.css",
     settings: {
-      foreground: palette.fg0,
+      foreground: palette.fg1,
       fontStyle: "italic"
     }
   },
