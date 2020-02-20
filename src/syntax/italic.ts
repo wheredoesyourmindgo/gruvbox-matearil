@@ -1558,6 +1558,13 @@ const getSyntax = (palette: Palette) => [
       fontStyle: "italic"
     }
   },
+  {
+    name: "Python yellow",
+    scope: "support.function.builtin.python",
+    settings: {
+      foreground: palette.yellow
+    }
+  },
   // }}}
   // Lua{{{
   {
