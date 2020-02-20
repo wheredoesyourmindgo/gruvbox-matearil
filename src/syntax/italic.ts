@@ -521,7 +521,7 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "CSS white0",
-    scope: "meta.property-value.css support.type.property-name.css",
+    scope: "meta.property-value.css, support.type.property-name.css",
     settings: {
       foreground: palette.fg0
     }
