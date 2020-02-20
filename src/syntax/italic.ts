@@ -516,7 +516,8 @@ const getSyntax = (palette: Palette) => [
     name: "CSS orange",
     scope: "entity.name.tag.css",
     settings: {
-      foreground: palette.orange
+      foreground: palette.orange,
+      fontStyle: "" // Attempt to un-italicize scopes.
     }
   },
   {
@@ -546,7 +547,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "CSS purple",
     scope:
-      "punctuation.definition.keyword.css, keyword.control.at-rule.font-face.css, keyword.control.at-rule.keyframes.css",
+      "punctuation.definition.keyword.css, keyword.control.at-rule.font-face.css, keyword.control.at-rule.keyframes.css, keyword.operator.combinator.css",
     settings: {
       foreground: palette.purple,
       fontStyle: "" // Attempt to un-italicize scopes.
