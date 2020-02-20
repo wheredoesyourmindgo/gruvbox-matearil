@@ -12,7 +12,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "Keyword",
     scope:
-      "keyword, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends, storage.modifier, keyword.operator.assignment, keyword.operator.logical, keyword.operator.type, keyword.operator.optional, keyword.operator.spread, keyword.operator.rest",
+      "keyword, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends, storage.modifier, keyword.operator.assignment, keyword.operator.logical, keyword.operator.type, keyword.operator.optional, keyword.operator.spread, keyword.operator.rest, keyword.operator.ternary",
     settings: {
       foreground: palette.purple
     }
@@ -110,8 +110,15 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "Modules",
+    scope: "support.type.object.module",
+    settings: {
+      foreground: palette.aqua
+    }
+  },
+  {
+    name: "Modules Italic",
     scope:
-      "support.module, support.node, support.other.module, support.type.object.module, entity.name.type.class.module, keyword.control.module",
+      "support.module, support.node, support.other.module, entity.name.type.class.module, keyword.control.module",
     settings: {
       foreground: palette.aqua,
       fontStyle: "italic"
@@ -513,13 +520,6 @@ const getSyntax = (palette: Palette) => [
     }
   },
   {
-    name: "CSS yellow",
-    scope: "punctuation.definition.entity.css",
-    settings: {
-      foreground: palette.yellow
-    }
-  },
-  {
     name: "CSS white0",
     scope: "meta.property-value.css",
     settings: {
@@ -570,7 +570,8 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "CSS blue Italic",
-    scope: "entity.other.attribute-name.class.css",
+    scope:
+      "entity.other.attribute-name.class.css, punctuation.definition.entity.css",
     settings: {
       foreground: palette.blue,
       fontStyle: "italic"
