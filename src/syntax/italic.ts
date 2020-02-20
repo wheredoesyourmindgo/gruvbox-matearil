@@ -682,13 +682,13 @@ const getSyntax = (palette: Palette) => [
   },
   // }}}
   // TypeScript{{{
-  {
-    name: "TypeScript grey1",
-    scope: "keyword.operator.type.annotation.ts",
-    settings: {
-      foreground: palette.grey1
-    }
-  },
+  // {
+  //   name: "TypeScript grey1",
+  //   scope: "keyword.operator.type.annotation.ts",
+  //   settings: {
+  //     foreground: palette.grey1
+  //   }
+  // },
   {
     name: "TypeScript yellow",
     scope:
@@ -775,7 +775,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "TypeScript purple",
     scope:
-      "punctuation.separator.key-value.ts, punctuation.accessor.ts, keyword.control.import.ts, keyword.control.export.ts, storage.modifier.async.ts, keyword.control.flow.ts, keyword.control.trycatch.ts, keyword.control.switch.ts, punctuation.accessor.optional.ts",
+      "punctuation.separator.key-value.ts, punctuation.accessor.ts, keyword.control.import.ts, keyword.control.export.ts, storage.modifier.async.ts, keyword.control.flow.ts, keyword.control.trycatch.ts, keyword.control.switch.ts, punctuation.accessor.optional.ts, keyword.operator.type.annotation.ts",
     settings: {
       foreground: palette.purple
     }
@@ -785,7 +785,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "TSX grey1",
     scope:
-      "keyword.operator.type.annotation.tsx, punctuation.definition.tag.begin.tsx, punctuation.definition.tag.end.tsx",
+      "punctuation.definition.tag.begin.tsx, punctuation.definition.tag.end.tsx",
     settings: {
       foreground: palette.grey1
     }
@@ -876,7 +876,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "TSX purple",
     scope:
-      "punctuation.separator.key-value.tsx, punctuation.accessor.tsx, keyword.control.import.tsx, keyword.control.export.tsx, storage.modifier.async.tsx, keyword.control.flow.tsx, keyword.control.trycatch.tsx, keyword.control.switch.tsx, punctuation.accessor.optional.tsx",
+      "punctuation.separator.key-value.tsx, punctuation.accessor.tsx, keyword.control.import.tsx, keyword.control.export.tsx, storage.modifier.async.tsx, keyword.control.flow.tsx, keyword.control.trycatch.tsx, keyword.control.switch.tsx, punctuation.accessor.optional.tsx, keyword.operator.type.annotation.tsx",
     settings: {
       foreground: palette.purple
     }
