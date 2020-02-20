@@ -75,7 +75,7 @@ const getSyntax = (palette: Palette) => [
     scope:
       "entity.name.function, support.function, meta.function, meta.function-call, entity.name.function, meta.definition.method",
     settings: {
-      foreground: palette.green
+      foreground: palette.aqua
     }
   },
   {
