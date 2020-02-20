@@ -16,10 +16,11 @@ export function activate() {
     });
   });
 
-  // regenerate theme files if it's newly installed but the user settings are not default
+  // Disregard comment below, cause I believe I want the theme files regenerated everytime updates to this extension are published.
+  // // regenerate theme files if it's newly installed but the user settings are not default
   if (
-    utils.isNewlyInstalled() &&
-    !utils.isDefaultConfiguration(utils.getConfiguration())
+    utils.isNewlyInstalled() //&&
+    // !utils.isDefaultConfiguration(utils.getConfiguration())
   ) {
     utils.generate(
       join(__dirname, "..", "themes", "gruvbox-matearil-dark.json"),
