@@ -6,3 +6,4 @@ temp/flag.txt
 **/*.ts
 **/tsconfig.json
 same.gif
+extra/**
