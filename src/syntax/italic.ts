@@ -12,7 +12,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "Keyword",
     scope:
-      "keyword, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends,  storage.modifier, keyword.operator.assignment, keyword.operator.logical, keyword.operator.type, keyword.operator.optional, keyword.operator.spread, keyword.operator.rest",
+      "keyword, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends, storage.modifier, keyword.operator.assignment, keyword.operator.logical, keyword.operator.type, keyword.operator.optional, keyword.operator.spread, keyword.operator.rest",
     settings: {
       foreground: palette.purple
     }
@@ -164,7 +164,15 @@ const getSyntax = (palette: Palette) => [
   {
     name: "Special identifier",
     scope:
-      "variable.language.this, variable.language.self, variable.language.super, keyword.other.this, variable.language.special, constant.language.null, constant.language.undefined, constant.language.nan",
+      "constant.language.null, constant.language.undefined, constant.language.nan",
+    settings: {
+      foreground: palette.red
+    }
+  },
+  {
+    name: "Special identifier Italic",
+    scope:
+      "variable.language.this, variable.language.self, variable.language.super, keyword.other.this, variable.language.special",
     settings: {
       foreground: palette.red,
       fontStyle: "italic"
