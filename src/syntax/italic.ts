@@ -492,14 +492,14 @@ const getSyntax = (palette: Palette) => [
   {
     name: "CSS grey",
     scope:
-      "punctuation.definition.entity.css, punctuation.separator.key-value.css, punctuation.terminator.rule.css, punctuation.separator.list.comma.css",
+      " punctuation.separator.key-value.css, punctuation.terminator.rule.css, punctuation.separator.list.comma.css",
     settings: {
       foreground: palette.grey1
     }
   },
   {
     name: "CSS red",
-    scope: "entity.other.attribute-name.class.css",
+    scope: "entity.other.attribute-name.class.css, constant.numeric.css",
     settings: {
       foreground: palette.red
     }
@@ -513,7 +513,8 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "CSS yellow",
-    scope: "entity.other.attribute-name.pseudo-element.css",
+    scope:
+      "entity.other.attribute-name.pseudo-element.css, punctuation.definition.entity.css",
     settings: {
       foreground: palette.yellow
     }
@@ -521,7 +522,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "CSS green",
     scope:
-      "string.quoted.single.css, string.quoted.double.css, support.constant.property-value.css, meta.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, constant.numeric.css, support.constant.font-name.css, variable.parameter.keyframe-list.css, keyword.other.unit",
+      "string.quoted.single.css, string.quoted.double.css, support.constant.property-value.css, meta.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, support.constant.font-name.css, variable.parameter.keyframe-list.css, keyword.other.unit",
     settings: {
       foreground: palette.green
     }
