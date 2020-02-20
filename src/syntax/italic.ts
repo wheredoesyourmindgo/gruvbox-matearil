@@ -506,7 +506,7 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "CSS orange",
-    scope: "keyword.other.unit, entity.name.tag.css",
+    scope: "entity.name.tag.css",
     settings: {
       foreground: palette.orange
     }
@@ -521,7 +521,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "CSS green",
     scope:
-      "string.quoted.single.css, string.quoted.double.css, support.constant.property-value.css, meta.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, constant.numeric.css, support.constant.font-name.css, variable.parameter.keyframe-list.css",
+      "string.quoted.single.css, string.quoted.double.css, support.constant.property-value.css, meta.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, constant.numeric.css, support.constant.font-name.css, variable.parameter.keyframe-list.css, keyword.other.unit",
     settings: {
       foreground: palette.green
     }
@@ -542,27 +542,35 @@ const getSyntax = (palette: Palette) => [
     }
   },
   {
+    name: "CSS purple",
+    scope:
+      "punctuation.definition.keyword.css, keyword.control.at-rule.font-face.css",
+    settings: {
+      foreground: palette.purple
+    }
+  },
+  {
     name: "CSS purple Italic",
     scope:
-      "entity.other.keyframe-offset.css, punctuation.definition.keyword.css, keyword.control.at-rule.keyframes.css, meta.selector.css, entity.other.attribute-name.pseudo-class.css",
+      "entity.other.keyframe-offset.css, keyword.control.at-rule.keyframes.css, meta.selector.css, entity.other.attribute-name.pseudo-class.css",
     settings: {
       foreground: palette.purple,
       fontStyle: "italic"
     }
   },
   {
-    name: "CSS blue",
+    name: "CSS blue Italic",
     scope: "entity.other.attribute-name.class.css",
     settings: {
-      foreground: palette.blue
+      foreground: palette.blue,
+      fontStyle: "italic"
     }
   },
   // }}}
   // SASS{{{
   {
     name: "SASS grey",
-    scope:
-      "punctuation.definition.keyword.scss, punctuation.separator.key-value.scss",
+    scope: "punctuation.separator.key-value.scss",
     settings: {
       foreground: palette.grey1
     }
@@ -593,7 +601,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "SASS purple Italic",
     scope:
-      "keyword.control.at-rule.include.scss, keyword.control.at-rule.use.scss, keyword.control.at-rule.mixin.scss, keyword.control.at-rule.extend.scss, keyword.control.at-rule.import.scss",
+      "keyword.control.at-rule.include.scss, keyword.control.at-rule.use.scss, keyword.control.at-rule.mixin.scss, keyword.control.at-rule.extend.scss",
     settings: {
       foreground: palette.purple,
       fontStyle: "italic"
@@ -601,7 +609,8 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "SASS purple",
-    scope: "entity.name.tag.custom.scss",
+    scope:
+      "entity.name.tag.custom.scss, punctuation.definition.keyword.scss, keyword.control.at-rule.import.scss, keyword.control.at-rule.fontface.scss",
     settings: {
       foreground: palette.purple
     }
