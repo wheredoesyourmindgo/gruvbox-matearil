@@ -20,7 +20,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "Keyword Italic",
     scope:
-      "storage.type.enum, storage.type.interface, storage.type.property, storage.type.extends, keyword.control.from, storage.modifier, keyword.control.as",
+      "storage.type.property, storage.type.extends, keyword.control.from, storage.modifier, keyword.control.as",
     settings: {
       fontStyle: "italic"
     }
