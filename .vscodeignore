@@ -5,3 +5,4 @@ temp/flag.txt
 *.vsix
 **/*.ts
 **/tsconfig.json
+same.gif

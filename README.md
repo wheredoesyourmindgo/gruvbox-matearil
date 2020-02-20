@@ -6,7 +6,7 @@ This VSCode color scheme is a fork of the super-readable [Gruvbox Material](http
 
 ## ¿Por qué?
 
-Cause I'm using different syntax colors (using the _same_ palette provided by Gruvbox-Material) and font styles, namely for the following language modes:
+Cause I'm using different syntax colors (using the [_same_](https://media.tenor.co/images/f5b10d0d087853b38c2c2f35c7686363/raw) palette provided by Gruvbox-Material) and font styles, namely for the following language modes:
 
 - Typescript
 - TSX
