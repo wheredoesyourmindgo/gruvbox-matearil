@@ -2078,10 +2078,10 @@ const getSyntax = (palette: Palette) => [
     }
   },
   {
-    name: "JSON white1",
+    name: "JSON white0",
     scope: "support.type.property-name.json",
     settings: {
-      foreground: palette.fg1
+      foreground: palette.fg0
     }
   },
   {
