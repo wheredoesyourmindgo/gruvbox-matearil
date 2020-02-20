@@ -12,7 +12,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "Keyword",
     scope:
-      "keyword, storage.type.function, storage.type.enum, storage.type.interface, storage.type.property, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends,  storage.modifier, keyword.operator.assignment, keyword.operator.logical, keyword.operator.type, keyword.operator.optional, keyword.operator.spread, keyword.operator.rest",
+      "keyword, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends,  storage.modifier, keyword.operator.assignment, keyword.operator.logical, keyword.operator.type, keyword.operator.optional, keyword.operator.spread, keyword.operator.rest",
     settings: {
       foreground: palette.purple
     }
@@ -35,7 +35,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "Storage",
     scope:
-      "storage, modifier, keyword.var, entity.name.tag, keyword.control.case, keyword.control.switch, storage.type.class",
+      "storage, modifier, keyword.var, entity.name.tag, keyword.control.case, keyword.control.switch, storage.type.class, storage.type.function, storage.type.enum, storage.type.interface, storage.type.property",
     settings: {
       foreground: palette.orange
     }
