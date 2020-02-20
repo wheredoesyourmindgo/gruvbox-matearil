@@ -492,14 +492,15 @@ const getSyntax = (palette: Palette) => [
   {
     name: "CSS grey",
     scope:
-      " punctuation.separator.key-value.css, punctuation.terminator.rule.css, punctuation.separator.list.comma.css",
+      "punctuation.separator.key-value.css, punctuation.terminator.rule.css, punctuation.separator.list.comma.css",
     settings: {
       foreground: palette.grey1
     }
   },
   {
     name: "CSS red",
-    scope: "entity.other.attribute-name.class.css, constant.numeric.css",
+    scope:
+      "entity.other.attribute-name.class.css, constant.numeric.css, keyword.other.unit",
     settings: {
       foreground: palette.red
     }
@@ -522,7 +523,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "CSS green",
     scope:
-      "string.quoted.single.css, string.quoted.double.css, support.constant.property-value.css, meta.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, support.constant.font-name.css, variable.parameter.keyframe-list.css, keyword.other.unit",
+      "string.quoted.single.css, string.quoted.double.css, support.constant.property-value.css, meta.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, support.constant.font-name.css, variable.parameter.keyframe-list.css",
     settings: {
       foreground: palette.green
     }
@@ -600,29 +601,20 @@ const getSyntax = (palette: Palette) => [
     }
   },
   {
-    name: "SASS purple Italic",
-    scope:
-      "keyword.control.at-rule.include.scss, keyword.control.at-rule.use.scss, keyword.control.at-rule.mixin.scss, keyword.control.at-rule.extend.scss",
-    settings: {
-      foreground: palette.purple,
-      fontStyle: "italic"
-    }
-  },
-  {
     name: "SASS purple",
     scope:
-      "entity.name.tag.custom.scss, punctuation.definition.keyword.scss, keyword.control.at-rule.import.scss, keyword.control.at-rule.fontface.scss",
+      "entity.name.tag.custom.scss, punctuation.definition.keyword.scss, keyword.control.at-rule.import.scss, keyword.control.at-rule.fontface.scss, keyword.control.at-rule.media.scss, keyword.control.at-rule.include.scss, keyword.control.at-rule.use.scss, keyword.control.at-rule.mixin.scss, keyword.control.at-rule.extend.scss",
     settings: {
       foreground: palette.purple
     }
   },
-  {
-    name: "SASS red",
-    scope: "meta.property-value.scss",
-    settings: {
-      foreground: palette.red
-    }
-  },
+  // {
+  //   name: "SASS red",
+  //   scope: "meta.property-value.scss",
+  //   settings: {
+  //     foreground: palette.red
+  //   }
+  // },
   // }}}
   // Stylus{{{
   {
