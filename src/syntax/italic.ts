@@ -619,7 +619,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "JavaScript purple",
     scope:
-      "punctuation.accessor.js, punctuation.separator.key-value.js, punctuation.definition.block.tag.jsdoc",
+      "punctuation.accessor.js, punctuation.separator.key-value.js, punctuation.definition.block.tag.jsdoc, punctuation.accessor.optional.js",
     settings: {
       foreground: palette.purple
     }
@@ -775,7 +775,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "TypeScript purple",
     scope:
-      "punctuation.separator.key-value.ts, punctuation.accessor.ts, keyword.control.import.ts, keyword.control.export.ts, storage.modifier.async.ts, keyword.control.flow.ts, keyword.control.trycatch.ts",
+      "punctuation.separator.key-value.ts, punctuation.accessor.ts, keyword.control.import.ts, keyword.control.export.ts, storage.modifier.async.ts, keyword.control.flow.ts, keyword.control.trycatch.ts, punctuation.accessor.optional.ts",
     settings: {
       foreground: palette.purple
     }
@@ -876,7 +876,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "TSX purple",
     scope:
-      "punctuation.separator.key-value.tsx, punctuation.accessor.tsx, keyword.control.import.tsx, keyword.control.export.tsx, storage.modifier.async.tsx, keyword.control.flow.tsx, keyword.control.trycatch.tsx",
+      "punctuation.separator.key-value.tsx, punctuation.accessor.tsx, keyword.control.import.tsx, keyword.control.export.tsx, storage.modifier.async.tsx, keyword.control.flow.tsx, keyword.control.trycatch.tsx, punctuation.accessor.optional.tsx",
     settings: {
       foreground: palette.purple
     }
