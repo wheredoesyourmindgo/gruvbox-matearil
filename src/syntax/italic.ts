@@ -570,8 +570,10 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "CSS yellow Italic",
-    scope:
-      "entity.other.attribute-name.id.css punctuation.definition.entity.css",
+    scope: [
+      "entity.other.attribute-name.id.css",
+      "entity.other.attribute-name.id.css punctuation.definition.entity.css"
+    ],
     settings: {
       foreground: palette.yellow,
       fontStyle: "italic"
