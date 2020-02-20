@@ -521,9 +521,17 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "CSS white0",
-    scope: "meta.property-value.css",
+    scope: "meta.property-value.css support.type.property-name.css",
     settings: {
       foreground: palette.fg0
+    }
+  },
+  {
+    name: "CSS white0 Italic",
+    scope: "support.type.vendored.property-name.css",
+    settings: {
+      foreground: palette.fg0,
+      fontStyle: "italic"
     }
   },
   {
@@ -533,21 +541,6 @@ const getSyntax = (palette: Palette) => [
     settings: {
       foreground: palette.green,
       fontStyle: "" // Attempt to un-italicize scopes.
-    }
-  },
-  {
-    name: "CSS aqua",
-    scope: "support.type.property-name.css",
-    settings: {
-      foreground: palette.aqua
-    }
-  },
-  {
-    name: "CSS aqua Italic",
-    scope: "support.type.vendored.property-name.css",
-    settings: {
-      foreground: palette.aqua,
-      fontStyle: "italic"
     }
   },
   {
@@ -574,13 +567,13 @@ const getSyntax = (palette: Palette) => [
     }
   },
   {
-    name: "CSS yellow Italic",
+    name: "CSS aqua Italic",
     scope: [
       "entity.other.attribute-name.id.css",
       "entity.other.attribute-name.id.css punctuation.definition.entity.css"
     ],
     settings: {
-      foreground: palette.yellow,
+      foreground: palette.aqua,
       fontStyle: "italic"
     }
   },
@@ -615,6 +608,14 @@ const getSyntax = (palette: Palette) => [
       "punctuation.definition.interpolation.begin.bracket.curly.scss, punctuation.definition.interpolation.end.bracket.curly.scss",
     settings: {
       foreground: palette.yellow
+    }
+  },
+  {
+    name: "SASS yellow Italic",
+    scope: "entity.other.attribute-name.attribute.scss",
+    settings: {
+      foreground: palette.yellow,
+      fontStyle: "italic"
     }
   },
   {
