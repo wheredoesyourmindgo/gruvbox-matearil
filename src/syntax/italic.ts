@@ -2163,6 +2163,15 @@ const getSyntax = (palette: Palette) => [
     settings: {
       foreground: palette.purple
     }
+  },
+  // }}}
+  // ENV{{{
+  {
+    name: "ENV green",
+    scope: "source.env",
+    settings: {
+      foreground: palette.green
+    }
   }
   // }}}
 ];
