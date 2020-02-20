@@ -6,7 +6,7 @@ This VSCode color scheme is a fork of the super-readable [Gruvbox Material](http
 
 ## ¿Por qué?
 
-Cause I'm using different syntax colors (using the [_same_](https://raw.githubusercontent.com/wheredoesyourmindgo/gruvbox-matearil/master/extra/same.gif) palette provided by Gruvbox-Material) and font styles, namely for the following language modes:
+Cause I'm targeting different scopes (using the [_same_](https://raw.githubusercontent.com/wheredoesyourmindgo/gruvbox-matearil/master/extra/same.gif) palette provided by Gruvbox-Material) for alternate foreground and font style settings, namely for the following language modes:
 
 - TypeScript
 - TSX
@@ -16,7 +16,7 @@ Cause I'm using different syntax colors (using the [_same_](https://raw.githubus
 - JSON
 - TEX
 
-Notable differences that will likely propagate through all language modes including the use of green strings over yellow strings, and the general swapping of how the purple and red colors are used when compared to Gruvbox-Material.
+Notable differences that will likely propagate through all language modes, including the use of green strings over yellow strings, and the general swapping of how the purple and red colors are used when compared to Gruvbox-Material. The italicization will look different too across the board when enabled.
 
 ## Installation, Usage, and Otherwise
 
