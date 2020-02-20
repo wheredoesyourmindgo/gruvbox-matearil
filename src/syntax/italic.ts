@@ -514,8 +514,7 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "CSS yellow",
-    scope:
-      "entity.other.attribute-name.pseudo-element.css, punctuation.definition.entity.css",
+    scope: "punctuation.definition.entity.css",
     settings: {
       foreground: palette.yellow
     }
@@ -530,7 +529,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "CSS green",
     scope:
-      "string.quoted.single.css, string.quoted.double.css, support.constant.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, support.constant.font-name.css, variable.parameter.keyframe-list.css",
+      "string.quoted.single.css, string.quoted.double.css, support.constant.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, support.constant.font-name.css, variable.parameter.keyframe-list.css, support.constant.parity.css",
     settings: {
       foreground: palette.green
     }
@@ -562,7 +561,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "CSS purple Italic",
     scope:
-      "entity.other.keyframe-offset.css,  meta.selector.css, entity.other.attribute-name.pseudo-class.css",
+      "entity.other.keyframe-offset.css,  meta.selector.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css",
     settings: {
       foreground: palette.purple,
       fontStyle: "italic"
