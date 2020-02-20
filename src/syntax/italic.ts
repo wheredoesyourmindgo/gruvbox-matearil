@@ -561,8 +561,13 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "CSS purple Italic",
-    scope:
-      "entity.other.keyframe-offset.css,  meta.selector.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css",
+    scope: [
+      "entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css",
+      "entity.other.keyframe-offset.css",
+      "meta.selector.css",
+      "entity.other.attribute-name.pseudo-class.css",
+      "entity.other.attribute-name.pseudo-element.css"
+    ],
     settings: {
       foreground: palette.purple,
       fontStyle: "italic"
