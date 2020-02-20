@@ -506,15 +506,14 @@ const getSyntax = (palette: Palette) => [
   },
   {
     name: "CSS orange",
-    scope: "keyword.other.unit",
+    scope: "keyword.other.unit, entity.name.tag.css",
     settings: {
       foreground: palette.orange
     }
   },
   {
     name: "CSS yellow",
-    scope:
-      "entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css",
+    scope: "entity.other.attribute-name.pseudo-element.css",
     settings: {
       foreground: palette.yellow
     }
@@ -535,19 +534,27 @@ const getSyntax = (palette: Palette) => [
     }
   },
   {
-    name: "CSS blue",
+    name: "CSS aqua Italic",
     scope: "support.type.vendored.property-name.css",
     settings: {
-      foreground: palette.blue
+      foreground: palette.aqua,
+      fontStyle: "italic"
     }
   },
   {
-    name: "CSS purple",
+    name: "CSS purple Italic",
     scope:
-      "entity.name.tag.css, entity.other.keyframe-offset.css, punctuation.definition.keyword.css, keyword.control.at-rule.keyframes.css, meta.selector.css",
+      "entity.other.keyframe-offset.css, punctuation.definition.keyword.css, keyword.control.at-rule.keyframes.css, meta.selector.css, entity.other.attribute-name.pseudo-class.css",
     settings: {
       foreground: palette.purple,
       fontStyle: "italic"
+    }
+  },
+  {
+    name: "CSS blue",
+    scope: "entity.other.attribute-name.class.css",
+    settings: {
+      foreground: palette.blue
     }
   },
   // }}}
@@ -584,12 +591,26 @@ const getSyntax = (palette: Palette) => [
     }
   },
   {
-    name: "SASS purple",
+    name: "SASS purple Italic",
     scope:
       "keyword.control.at-rule.include.scss, keyword.control.at-rule.use.scss, keyword.control.at-rule.mixin.scss, keyword.control.at-rule.extend.scss, keyword.control.at-rule.import.scss",
     settings: {
       foreground: palette.purple,
       fontStyle: "italic"
+    }
+  },
+  {
+    name: "SASS purple",
+    scope: "entity.name.tag.custom.scss",
+    settings: {
+      foreground: palette.purple
+    }
+  },
+  {
+    name: "SASS red",
+    scope: "meta.property-value.scss",
+    settings: {
+      foreground: palette.red
     }
   },
   // }}}
