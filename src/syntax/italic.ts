@@ -627,14 +627,15 @@ const getSyntax = (palette: Palette) => [
   {
     name: "JavaScript purple",
     scope:
-      "punctuation.accessor.js, punctuation.separator.key-value.js, punctuation.definition.block.tag.jsdoc, punctuation.accessor.optional.js, keyword.control.import.js, keyword.control.export.js, storage.modifier.async.js, keyword.control.flow.js, keyword.control.trycatch.js, keyword.control.switch.js",
+      "punctuation.accessor.js, punctuation.separator.key-value.js, punctuation.accessor.optional.js, keyword.control.import.js, keyword.control.export.js, storage.modifier.async.js, keyword.control.flow.js, keyword.control.trycatch.js, keyword.control.switch.js",
     settings: {
       foreground: palette.purple
     }
   },
   {
     name: "JavaScript orange",
-    scope: "storage.type.js, storage.type.function.arrow.js",
+    scope:
+      "storage.type.js, storage.type.function.arrow.js, punctuation.definition.block.tag.jsdoc",
     settings: {
       foreground: palette.orange
     }
