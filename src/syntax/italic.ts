@@ -521,9 +521,16 @@ const getSyntax = (palette: Palette) => [
     }
   },
   {
+    name: "CSS white0",
+    scope: "meta.property-value.css",
+    settings: {
+      foreground: palette.fg0
+    }
+  },
+  {
     name: "CSS green",
     scope:
-      "string.quoted.single.css, string.quoted.double.css, support.constant.property-value.css, meta.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, support.constant.font-name.css, variable.parameter.keyframe-list.css",
+      "string.quoted.single.css, string.quoted.double.css, support.constant.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, support.constant.font-name.css, variable.parameter.keyframe-list.css",
     settings: {
       foreground: palette.green
     }
