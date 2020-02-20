@@ -8,14 +8,15 @@ This VSCode color scheme is a fork of the super-readable [Gruvbox Material](http
 
 Cause I'm using different syntax colors (using the [_same_](https://raw.githubusercontent.com/wheredoesyourmindgo/gruvbox-matearil/master/extra/same.gif) palette provided by Gruvbox-Material) and font styles, namely for the following language modes:
 
-- Typescript
+- TypeScript
 - TSX
-- Javascript
+- JavaScript
 - JSX
 - HTML
+- JSON
 - TEX
 
-Notable differences that will likely propagate through all language modes includes the use of green strings over yellow strings, and the general swapping of how the purple and red colors are used when compared to Gruvbox-Material.
+Notable differences that will likely propagate through all language modes including the use of green strings over yellow strings, and the general swapping of how the purple and red colors are used when compared to Gruvbox-Material.
 
 ## Installation, Usage, and Otherwise
 
