@@ -548,7 +548,8 @@ const getSyntax = (palette: Palette) => [
     scope:
       "punctuation.definition.keyword.css, keyword.control.at-rule.font-face.css",
     settings: {
-      foreground: palette.purple
+      foreground: palette.purple,
+      fontStyle: "" // Attempt to un-italicize scopes.
     }
   },
   {
@@ -605,7 +606,8 @@ const getSyntax = (palette: Palette) => [
     scope:
       "entity.name.tag.custom.scss, punctuation.definition.keyword.scss, keyword.control.at-rule.import.scss, keyword.control.at-rule.fontface.scss, keyword.control.at-rule.media.scss, keyword.control.at-rule.include.scss, keyword.control.at-rule.use.scss, keyword.control.at-rule.mixin.scss, keyword.control.at-rule.extend.scss",
     settings: {
-      foreground: palette.purple
+      foreground: palette.purple,
+      fontStyle: "" // Attempt to un-italicize scopes.
     }
   },
   // {
