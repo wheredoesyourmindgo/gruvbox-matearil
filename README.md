@@ -14,7 +14,6 @@ Cause I'm targeting different scopes (using the [_same_](https://raw.githubuserc
 - JSX
 - HTML
 - JSON
-- TEX
 
 Notable differences that will likely propagate through all language modes include the use of green strings over yellow strings, and the general swapping of how the purple and red colors are used when compared to Gruvbox-Material. Additionally, italicization will look different too across the board when enabled via User/Workspace Settings.
 
