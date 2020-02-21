@@ -181,7 +181,7 @@ const getSyntax = (palette: Palette) => [
     scope:
       "variable.language.this, variable.language.self, variable.language.super, keyword.other.this, variable.language.special",
     settings: {
-      foreground: palette.red,
+      foreground: palette.orange,
       fontStyle: "italic"
     }
   },
@@ -1288,13 +1288,22 @@ const getSyntax = (palette: Palette) => [
     }
   },
   {
-    name: "Java red",
+    name: "Java purple",
     scope: "keyword.other.import.java, keyword.other.package.java",
     settings: {
-      foreground: palette.red,
-      fontStyle: "italic"
+      foreground: palette.purple
+      // fontStyle: "italic"
     }
   },
+  // {
+  //   name: "Java purple Italic",
+  //   scope:
+  //     "",
+  //   settings: {
+  //     foreground: palette.purple,
+  //     fontStyle: "italic"
+  //   }
+  // },
   {
     name: "Java orange",
     scope: "storage.type.function.arrow.java, keyword.control.ternary.java",
@@ -1310,12 +1319,12 @@ const getSyntax = (palette: Palette) => [
     }
   },
   {
-    name: "Java purple",
+    name: "Java white0",
     scope:
       "variable.language.wildcard.java, storage.modifier.import.java, storage.type.annotation.java, punctuation.definition.annotation.java, storage.modifier.package.java, entity.name.type.module.java",
     settings: {
-      foreground: palette.purple,
-      fontStyle: "italic"
+      foreground: palette.fg0
+      // fontStyle: "italic"
     }
   },
   // }}}
