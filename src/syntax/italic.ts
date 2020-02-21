@@ -12,7 +12,7 @@ const getSyntax = (palette: Palette) => [
   {
     name: "Keyword",
     scope:
-      "keyword, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends, storage.modifier, keyword.operator.assignment, keyword.operator.logical, keyword.operator.type, keyword.operator.optional, keyword.operator.spread, keyword.operator.rest, keyword.operator.ternary",
+      "keyword, keyword.operator.new, keyword.operator.expression, keyword.operator.new, keyword.operator.delete, storage.type.extends, storage.modifier, keyword.operator.assignment, keyword.operator.logical, keyword.operator.type, keyword.operator.optional, keyword.operator.spread, keyword.operator.rest, keyword.operator.ternary, keyword.operator.arithmetic",
     settings: {
       foreground: palette.purple
     }
